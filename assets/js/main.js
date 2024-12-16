@@ -31,7 +31,7 @@ document.addEventListener('DOMContentLoaded', async () => {
         const socialMediaLink = document.createElement("div");
         socialMediaLink.className = "col-10 col-lg-4";
         socialMediaLink.innerHTML = `
-            <div class="feature-grid box box-shadow box-shadow__hover bg-light-primary row" onclick="location.href='${url}';" style="cursor: pointer;">
+            <a class="feature-grid box box-shadow box-shadow__hover bg-light-primary row" href="${url}">
                 <div class="mt-auto col">
                     <div class="row align-items-center">
                         <div class="col-12 col-md-4 col-lg-12">
@@ -50,7 +50,7 @@ document.addEventListener('DOMContentLoaded', async () => {
                         </div>
                     </div>
                 </div>
-            </div>
+            </a>
         `;
         container.appendChild(socialMediaLink);
       });
